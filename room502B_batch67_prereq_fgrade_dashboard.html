@@ -1,0 +1,375 @@
+
+<h2 class="sr-only">Room 502B — 242 Batch — Batch-67 prerequisite eligibility and F-grade report for Summer 2026 registration</h2>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:1rem 0;font-family:var(--font-sans);font-size:13px}
+.hdr{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:8px}
+.hdr-title{font-size:16px;font-weight:500;color:var(--color-text-primary)}
+.hdr-sub{font-size:12px;color:var(--color-text-secondary)}
+.tabs{display:flex;gap:0;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:1.5rem}
+.tab{padding:7px 14px;font-size:12px;cursor:pointer;border:none;background:transparent;color:var(--color-text-secondary);border-bottom:2px solid transparent;border-radius:6px 6px 0 0;font-family:var(--font-sans)}
+.tab.on{color:var(--color-text-primary);border-bottom:2px solid #185FA5;font-weight:500}
+.panel{display:none}.panel.on{display:block}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-bottom:1.5rem}
+.m{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px 14px}
+.ml{font-size:11px;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:.04em;margin-bottom:5px}
+.mv{font-size:22px;font-weight:500;color:var(--color-text-primary)}
+.mv.red{color:#A32D2D}.mv.amber{color:#854F0B}.mv.green{color:#3B6D11}.mv.blue{color:#185FA5}
+.ms{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem;margin-bottom:1rem}
+.ct{font-size:11px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;padding:7px 8px;color:var(--color-text-secondary);font-weight:500;border-bottom:0.5px solid var(--color-border-tertiary);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+td{padding:7px 8px;border-bottom:0.5px solid var(--color-border-tertiary);color:var(--color-text-primary);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--color-background-secondary)}
+.b{display:inline-block;padding:2px 7px;border-radius:20px;font-size:10px;font-weight:500;white-space:nowrap}
+.b-r{background:#FCEBEB;color:#A32D2D}.b-a{background:#FAEEDA;color:#854F0B}.b-g{background:#EAF3DE;color:#3B6D11}.b-b{background:#E6F1FB;color:#185FA5}.b-gy{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.src{display:flex;gap:8px;margin-bottom:1rem;flex-wrap:wrap}
+.src input{flex:1;min-width:160px;font-size:12px;font-family:var(--font-sans)}
+.src select{font-size:12px;font-family:var(--font-sans);padding:6px 8px}
+.mono{font-family:var(--font-mono);font-size:11px}
+.cstatus{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:3px;vertical-align:1px}
+.cs-ok{background:#639922}.cs-f{background:#A32D2D}.cs-nt{background:#854F0B}.cs-i{background:#6B6B6B}
+</style>
+
+<div class="wrap">
+<div class="hdr">
+  <div>
+    <p class="hdr-title">Room 502B — 242 Batch</p>
+    <p class="hdr-sub">Batch-67 Prerequisites & F-Grade Report · Summer 2026 · 251 students</p>
+  </div>
+  <span class="b b-b">CSE226 · CSE311 · CSE312 · CSE313 · CSE314</span>
+</div>
+
+<div class="tabs">
+  <button class="tab on" onclick="sw('ov',this)"><i class="ti ti-layout-dashboard" aria-hidden="true"></i> Overview</button>
+  <button class="tab" onclick="sw('pr',this)"><i class="ti ti-list-check" aria-hidden="true"></i> Prereq check</button>
+  <button class="tab" onclick="sw('fg',this)"><i class="ti ti-alert-triangle" aria-hidden="true"></i> F-grade students</button>
+  <button class="tab" onclick="sw('ok',this)"><i class="ti ti-circle-check" aria-hidden="true"></i> Eligible</button>
+</div>
+
+<div id="p-ov" class="panel on">
+  <div class="metrics">
+    <div class="m"><div class="ml">Total students</div><div class="mv blue">251</div></div>
+    <div class="m"><div class="ml">Fully eligible</div><div class="mv green">178</div><div class="ms">all prereqs cleared</div></div>
+    <div class="m"><div class="ml">Prereq issues</div><div class="mv red">73</div><div class="ms">blocked from ≥1 course</div></div>
+    <div class="m"><div class="ml">F grade (never passed)</div><div class="mv red">56</div><div class="ms">across any course</div></div>
+    <div class="m"><div class="ml">F in prereq course</div><div class="mv red">15</div><div class="ms">directly blocking</div></div>
+    <div class="m"><div class="ml">Prereq not taken</div><div class="mv amber">44</div><div class="ms">course never attempted</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+    <div class="card">
+      <div class="ct">Registration eligibility</div>
+      <div style="position:relative;height:180px"><canvas id="chart1" role="img" aria-label="Doughnut: 178 eligible, 73 blocked">178 eligible, 73 blocked.</canvas></div>
+      <div style="display:flex;gap:16px;margin-top:10px;font-size:11px;color:var(--color-text-secondary)">
+        <span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:#639922"></span>Eligible 178</span>
+        <span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:#E24B4A"></span>Blocked 73</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="ct">Blocking reason breakdown</div>
+      <div style="position:relative;height:180px"><canvas id="chart2" role="img" aria-label="Bar chart of blocking reasons">Not taken: 44 students. F grade in prereq: 15. Incomplete in prereq: 12. F grade in other course: 56 total.</canvas></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ct">Prerequisite coverage per course</div>
+    <table>
+      <thead><tr><th>Batch-67 course</th><th>Prerequisite needed</th><th>Passed ✓</th><th>F grade ✗</th><th>Not taken</th><th>Incomplete</th></tr></thead>
+      <tbody>
+        <tr><td><code>CSE226</code> Numerical Methods</td><td><code>MAT211</code></td><td><span class="b b-g">176</span></td><td><span class="b b-r">10</span></td><td><span class="b b-a">58</span></td><td><span class="b b-gy">7</span></td></tr>
+        <tr><td><code>CSE311</code> Database Mgmt System</td><td><code>CSE221</code></td><td><span class="b b-g">180</span></td><td><span class="b b-r">12</span></td><td><span class="b b-a">47</span></td><td><span class="b b-gy">12</span></td></tr>
+        <tr><td><code>CSE312</code> DBMS Lab</td><td><code>CSE222</code></td><td><span class="b b-g">187</span></td><td><span class="b b-r">2</span></td><td><span class="b b-a">49</span></td><td><span class="b b-gy">13</span></td></tr>
+        <tr><td><code>CSE313</code> Compiler Design</td><td><code>CSE228</code></td><td><span class="b b-g">183</span></td><td><span class="b b-r">7</span></td><td><span class="b b-a">48</span></td><td><span class="b b-gy">13</span></td></tr>
+        <tr><td><code>CSE314</code> Compiler Design Lab</td><td><code>CSE114</code></td><td><span class="b b-g">231</span></td><td><span class="b b-r">3</span></td><td><span class="b b-a">0</span></td><td><span class="b b-gy">17</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div id="p-pr" class="panel">
+  <div class="src">
+    <input id="ps" type="text" placeholder="Search by name or student ID…" oninput="filterP()">
+    <select id="pf" onchange="filterP()">
+      <option value="all">All 251 students</option>
+      <option value="blocked">Issues only (73)</option>
+      <option value="ok">Eligible only (178)</option>
+    </select>
+  </div>
+  <div style="font-size:11px;color:var(--color-text-secondary);margin-bottom:8px">
+    <span class="cstatus cs-ok"></span>Passed &nbsp;<span class="cstatus cs-f"></span>F grade (blocked) &nbsp;<span class="cstatus cs-nt"></span>Not taken &nbsp;<span class="cstatus cs-i"></span>Incomplete
+  </div>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>ID</th><th>Name</th><th>MAT211<br>→CSE226</th><th>CSE221<br>→CSE311</th><th>CSE222<br>→CSE312</th><th>CSE228<br>→CSE313</th><th>CSE114<br>→CSE314</th><th>Status</th></tr></thead>
+    <tbody id="ptbody"></tbody>
+  </table>
+  </div>
+</div>
+
+<div id="p-fg" class="panel">
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 14px;margin-bottom:1rem;font-size:12px;color:var(--color-text-secondary)">
+    Showing 56 students who have received an F in at least one course they have <strong>never subsequently passed</strong>. These are active academic backlogs requiring retake registration.
+  </div>
+  <div class="src">
+    <input id="fs" type="text" placeholder="Search by name or ID…" oninput="filterF()">
+    <select id="ff" onchange="filterF()">
+      <option value="all">All with F (56)</option>
+      <option value="prereq">F in prereq course</option>
+    </select>
+  </div>
+  <table>
+    <thead><tr><th>#</th><th>Student ID</th><th>Name</th><th>F courses (never passed)</th><th>Action</th></tr></thead>
+    <tbody id="ftbody"></tbody>
+  </table>
+</div>
+
+<div id="p-ok" class="panel">
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 14px;margin-bottom:1rem;font-size:12px;color:var(--color-text-secondary)">
+    178 students have cleared all 5 prerequisites and can register for all applicable Batch-67 courses.
+  </div>
+  <input style="width:100%;margin-bottom:1rem;font-size:12px" type="text" placeholder="Search…" oninput="filterOK(this.value)" id="oks">
+  <table>
+    <thead><tr><th>#</th><th>Student ID</th><th>Name</th><th>All prerequisites</th></tr></thead>
+    <tbody id="oktbody"></tbody>
+  </table>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const PREREQS = ['MAT211','CSE221','CSE222','CSE228','CSE114'];
+
+const BLOCKED = [
+ {id:'242-15-316',n:'Mst. Jerin Binta Jaman',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'FAILED_F'}},
+ {id:'242-15-322',n:'Samiya Akter',ps:{MAT211:'PASSED',CSE221:'FAILED_F',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-323',n:'Samiul Hoque Iram',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-331',n:'Towhid Omar Rupok',ps:{MAT211:'PASSED',CSE221:'FAILED_F',CSE222:'NOT_TAKEN',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-337',n:'Md. Rashed Al Deepto',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-338',n:'Meftahul Jannat Mim',ps:{MAT211:'PASSED',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-345',n:'M. M. Tariqur Rahman Rafi',ps:{MAT211:'PASSED',CSE221:'INCOMPLETE',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-351',n:'Fatema Jannat',ps:{MAT211:'PASSED',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-358',n:'Md. Sami',ps:{MAT211:'PASSED',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'FAILED_F',CSE114:'PASSED'}},
+ {id:'242-15-359',n:'Subrina Bintee Zaman Jebin',ps:{MAT211:'INCOMPLETE',CSE221:'PASSED',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-366',n:'S. M. Nadim Ahomed',ps:{MAT211:'NOT_TAKEN',CSE221:'FAILED_F',CSE222:'INCOMPLETE',CSE228:'FAILED_F',CSE114:'PASSED'}},
+ {id:'242-15-367',n:'S. M. Udoy Hasan',ps:{MAT211:'FAILED_F',CSE221:'FAILED_F',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-374',n:'Imran Hasan',ps:{MAT211:'FAILED_F',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'FAILED_F',CSE114:'PASSED'}},
+ {id:'242-15-378',n:'Md. Minnatul Islam',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-381',n:'(381)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-384',n:'(384)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-385',n:'(385)',ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'INCOMPLETE',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-386',n:'(386)',ps:{MAT211:'FAILED_F',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-392',n:'(392)',ps:{MAT211:'NOT_TAKEN',CSE221:'PASSED',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-393',n:'(393)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-406',n:'(406)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-408',n:'(408)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-414',n:'(414)',ps:{MAT211:'PASSED',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-415',n:'(415)',ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'PASSED',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-418',n:'(418)',ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'PASSED',CSE228:'FAILED_F',CSE114:'PASSED'}},
+ {id:'242-15-422',n:'(422)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'FAILED_F'}},
+ {id:'242-15-429',n:'(429)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-430',n:'(430)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-437',n:'(437)',ps:{MAT211:'PASSED',CSE221:'INCOMPLETE',CSE222:'INCOMPLETE',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-440',n:'(440)',ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'PASSED',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-508',n:'(508)',ps:{MAT211:'FAILED_F',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-509',n:'(509)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-518',n:'(518)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-519',n:'(519)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-520',n:'(520)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-522',n:'(522)',ps:{MAT211:'FAILED_F',CSE221:'FAILED_F',CSE222:'INCOMPLETE',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-524',n:'(524)',ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'NOT_TAKEN',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-528',n:'(528)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-535',n:'(535)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-538',n:'(538)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-542',n:'(542)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-543',n:'(543)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-551',n:'(551)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-554',n:'(554)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-557',n:'(557)',ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'PASSED',CSE228:'FAILED_F',CSE114:'PASSED'}},
+ {id:'242-15-558',n:'(558)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-559',n:'(559)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-560',n:'(560)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-566',n:'(566)',ps:{MAT211:'FAILED_F',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-696',n:'(696)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-700',n:'(700)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-704',n:'(704)',ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'PASSED',CSE228:'FAILED_F',CSE114:'PASSED'}},
+ {id:'242-15-708',n:'(708)',ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'PASSED',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-709',n:'(709)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-710',n:'(710)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-711',n:'(711)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-713',n:'(713)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-718',n:'(718)',ps:{MAT211:'PASSED',CSE221:'FAILED_F',CSE222:'PASSED',CSE228:'INCOMPLETE',CSE114:'PASSED'}},
+ {id:'242-15-719',n:'(719)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-720',n:'(720)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-724',n:'(724)',ps:{MAT211:'FAILED_F',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-726',n:'(726)',ps:{MAT211:'PASSED',CSE221:'FAILED_F',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-729',n:'(729)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'FAILED_F'}},
+ {id:'242-15-730',n:'(730)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-735',n:'(735)',ps:{MAT211:'FAILED_F',CSE221:'PASSED',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-736',n:'(736)',ps:{MAT211:'FAILED_F',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'FAILED_F',CSE114:'PASSED'}},
+ {id:'242-15-737',n:'(737)',ps:{MAT211:'NOT_TAKEN',CSE221:'PASSED',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-738',n:'(738)',ps:{MAT211:'PASSED',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-741',n:'(741)',ps:{MAT211:'INCOMPLETE',CSE221:'FAILED_F',CSE222:'PASSED',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-744',n:'(744)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'INCOMPLETE'}},
+ {id:'242-15-750',n:'(750)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+ {id:'242-15-753',n:'(753)',ps:{MAT211:'PASSED',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'PASSED',CSE114:'PASSED'}},
+ {id:'242-15-756',n:'(756)',ps:{MAT211:'NOT_TAKEN',CSE221:'NOT_TAKEN',CSE222:'NOT_TAKEN',CSE228:'NOT_TAKEN',CSE114:'PASSED'}},
+];
+
+const ELIGIBLE_IDS = ['242-15-317','242-15-318','242-15-319','242-15-320','242-15-321','242-15-324','242-15-326','242-15-327','242-15-328','242-15-329','242-15-330','242-15-332','242-15-333','242-15-334','242-15-335','242-15-336','242-15-339','242-15-340','242-15-341','242-15-342','242-15-343','242-15-344','242-15-346','242-15-347','242-15-348','242-15-349','242-15-350','242-15-352','242-15-353','242-15-354','242-15-355','242-15-356','242-15-357','242-15-360','242-15-361','242-15-362','242-15-363','242-15-364','242-15-365','242-15-368','242-15-369','242-15-370','242-15-371','242-15-372','242-15-373','242-15-375','242-15-376','242-15-377','242-15-379','242-15-380','242-15-382','242-15-383','242-15-387','242-15-388','242-15-389','242-15-390','242-15-391','242-15-394','242-15-395','242-15-396','242-15-397','242-15-398','242-15-399','242-15-400','242-15-401','242-15-402','242-15-403','242-15-404','242-15-405','242-15-407','242-15-409','242-15-410','242-15-411','242-15-412','242-15-413','242-15-416','242-15-417','242-15-419','242-15-420','242-15-421','242-15-423','242-15-424','242-15-425','242-15-426','242-15-427','242-15-428','242-15-431','242-15-432','242-15-433','242-15-434','242-15-435','242-15-436','242-15-438','242-15-439','242-15-441','242-15-505','242-15-506','242-15-507','242-15-510','242-15-511','242-15-512','242-15-513','242-15-514','242-15-515','242-15-516','242-15-517','242-15-521','242-15-523','242-15-525','242-15-526','242-15-527','242-15-529','242-15-530','242-15-531','242-15-532','242-15-533','242-15-534','242-15-536','242-15-537','242-15-539','242-15-540','242-15-541','242-15-544','242-15-545','242-15-546','242-15-547','242-15-548','242-15-549','242-15-550','242-15-552','242-15-553','242-15-555','242-15-556','242-15-561','242-15-562','242-15-563','242-15-564','242-15-565','242-15-567','242-15-694','242-15-695','242-15-697','242-15-698','242-15-699','242-15-701','242-15-702','242-15-703','242-15-705','242-15-706','242-15-707','242-15-712','242-15-714','242-15-715','242-15-716','242-15-717','242-15-721','242-15-722','242-15-723','242-15-725','242-15-727','242-15-728','242-15-731','242-15-732','242-15-733','242-15-734','242-15-739','242-15-740','242-15-742','242-15-743','242-15-745','242-15-746','242-15-747','242-15-748','242-15-749','242-15-751','242-15-752','242-15-753'];
+
+const PREREQ_COURSES = ['242-15-316','242-15-322','242-15-331','242-15-358','242-15-366','242-15-367','242-15-374','242-15-418','242-15-422','242-15-508','242-15-522','242-15-557','242-15-704','242-15-726','242-15-729','242-15-735','242-15-736','242-15-741'];
+
+const FGRADE_DATA = [
+ {id:'242-15-316',n:'Mst. Jerin Binta Jaman',courses:['CSE112','CSE113','CSE114','CSE115'],prereq:true},
+ {id:'242-15-322',n:'Samiya Akter',courses:['CSE221'],prereq:true},
+ {id:'242-15-323',n:'Samiul Hoque Iram',courses:['CSE113'],prereq:false},
+ {id:'242-15-331',n:'Towhid Omar Rupok',courses:['CSE221'],prereq:true},
+ {id:'242-15-342',n:'Sumaiya Tabassum Saiba',courses:['CSE121'],prereq:false},
+ {id:'242-15-345',n:'M. M. Tariqur Rahman Rafi',courses:['CSE216','CSE212'],prereq:false},
+ {id:'242-15-358',n:'Md. Sami',courses:['CSE225','CSE223','CSE227','CSE228','AOL101'],prereq:true},
+ {id:'242-15-359',n:'Subrina Bintee Zaman Jebin',courses:['PHY102'],prereq:false},
+ {id:'242-15-366',n:'S. M. Nadim Ahomed',courses:['CSE225','CSE223','CSE121','CSE227','CSE228','AOL101','CSE122','MAT102','PHY102','ENG101','CSE221'],prereq:true},
+ {id:'242-15-367',n:'S. M. Udoy Hasan',courses:['CSE225','CSE221','CSE215','MAT211','CSE115'],prereq:true},
+ {id:'242-15-374',n:'Imran Hasan',courses:['CSE227','CSE228','MAT211'],prereq:true},
+ {id:'242-15-378',n:'Md. Minnatul Islam',courses:['CSE113'],prereq:false},
+ {id:'242-15-381',n:'(381)',courses:['CSE123','CSE124','PHY102','CSE121'],prereq:false},
+ {id:'242-15-384',n:'(384)',courses:['PHY101'],prereq:false},
+ {id:'242-15-385',n:'(385)',courses:['CSE225'],prereq:false},
+ {id:'242-15-386',n:'(386)',courses:['CSE115','MAT211','CSE213','CSE212','CSE121','CSE122','CSE123','ENG102','PHY102'],prereq:true},
+ {id:'242-15-396',n:'(396)',courses:['CSE215'],prereq:false},
+ {id:'242-15-408',n:'(408)',courses:['CSE113'],prereq:false},
+ {id:'242-15-418',n:'(418)',courses:['CSE228'],prereq:true},
+ {id:'242-15-422',n:'(422)',courses:['CSE113','CSE114'],prereq:true},
+ {id:'242-15-429',n:'(429)',courses:['PHY103','PHY101','MAT101'],prereq:false},
+ {id:'242-15-430',n:'(430)',courses:['CSE113'],prereq:false},
+ {id:'242-15-508',n:'(508)',courses:['MAT211'],prereq:true},
+ {id:'242-15-509',n:'(509)',courses:['ENG101','MAT101','CSE115'],prereq:false},
+ {id:'242-15-518',n:'(518)',courses:['PHY101'],prereq:false},
+ {id:'242-15-519',n:'(519)',courses:['PHY102'],prereq:false},
+ {id:'242-15-521',n:'(521)',courses:['CSE215'],prereq:false},
+ {id:'242-15-522',n:'(522)',courses:['CSE221','MAT211','CSE212'],prereq:true},
+ {id:'242-15-538',n:'(538)',courses:['CSE113','PHY101'],prereq:false},
+ {id:'242-15-542',n:'(542)',courses:['CSE121'],prereq:false},
+ {id:'242-15-551',n:'(551)',courses:['CSE115'],prereq:false},
+ {id:'242-15-554',n:'(554)',courses:['CSE112','ENG101','MAT101','CSE113','PHY101','CSE115'],prereq:false},
+ {id:'242-15-556',n:'(556)',courses:['CSE225'],prereq:false},
+ {id:'242-15-557',n:'(557)',courses:['CSE228','CSE123'],prereq:true},
+ {id:'242-15-558',n:'(558)',courses:['MAT101','CSE115'],prereq:false},
+ {id:'242-15-566',n:'(566)',courses:['MAT211','CSE213','CSE214'],prereq:true},
+ {id:'242-15-696',n:'(696)',courses:['CSE123'],prereq:false},
+ {id:'242-15-704',n:'(704)',courses:['CSE225','CSE228'],prereq:true},
+ {id:'242-15-706',n:'(706)',courses:['ENG102'],prereq:false},
+ {id:'242-15-707',n:'(707)',courses:['CSE225'],prereq:false},
+ {id:'242-15-711',n:'(711)',courses:['CSE115'],prereq:false},
+ {id:'242-15-718',n:'(718)',courses:['CSE227','CSE215','CSE221','CSE212'],prereq:true},
+ {id:'242-15-720',n:'(720)',courses:['CSE112','CSE113','MAT101'],prereq:false},
+ {id:'242-15-724',n:'(724)',courses:['CSE213','CSE212','CSE121','BNS101','MAT211','PHY101','CSE112'],prereq:true},
+ {id:'242-15-726',n:'(726)',courses:['CSE221'],prereq:true},
+ {id:'242-15-729',n:'(729)',courses:['ENG101','CSE114','MAT101','PHY101','CSE113','CSE115'],prereq:true},
+ {id:'242-15-734',n:'(734)',courses:['CSE225'],prereq:false},
+ {id:'242-15-735',n:'(735)',courses:['MAT211'],prereq:true},
+ {id:'242-15-736',n:'(736)',courses:['MAT211','CSE225','CSE228','CSE215'],prereq:true},
+ {id:'242-15-738',n:'(738)',courses:['CSE213','CSE212','PHY102'],prereq:false},
+ {id:'242-15-741',n:'(741)',courses:['CSE221'],prereq:true},
+ {id:'242-15-742',n:'(742)',courses:['CSE223'],prereq:false},
+ {id:'242-15-746',n:'(746)',courses:['CSE223','PHY102','CSE115'],prereq:false},
+ {id:'242-15-748',n:'(748)',courses:['CSE227','PHY102'],prereq:false},
+ {id:'242-15-750',n:'(750)',courses:['CSE123','PHY101','MAT102','CSE124'],prereq:false},
+ {id:'242-15-756',n:'(756)',courses:['CSE122'],prereq:false},
+];
+
+const ALL_STUDENTS = [];
+BLOCKED.forEach(r=>ALL_STUDENTS.push({id:r.id,n:r.n,ps:r.ps,blocked:true}));
+ELIGIBLE_IDS.forEach(id=>{
+ const n = id.replace('242-15-','(')+')'
+ ALL_STUDENTS.push({id,n,ps:{MAT211:'PASSED',CSE221:'PASSED',CSE222:'PASSED',CSE228:'PASSED',CSE114:'PASSED'},blocked:false});
+});
+
+function pCell(st){
+ const dots={PASSED:'cs-ok',FAILED_F:'cs-f',NOT_TAKEN:'cs-nt',INCOMPLETE:'cs-i',D_ONLY:'cs-ok'};
+ const labels={PASSED:'✓',FAILED_F:'F',NOT_TAKEN:'–',INCOMPLETE:'I',D_ONLY:'✓'};
+ return `<span class="cstatus ${dots[st]||'cs-nt'}"></span><span style="font-size:11px">${labels[st]||'?'}</span>`;
+}
+
+function renderPrereq(data){
+ document.getElementById('ptbody').innerHTML = data.map(r=>`<tr>
+  <td class="mono">${r.id}</td>
+  <td>${r.n}</td>
+  <td>${pCell(r.ps.MAT211)}</td>
+  <td>${pCell(r.ps.CSE221)}</td>
+  <td>${pCell(r.ps.CSE222)}</td>
+  <td>${pCell(r.ps.CSE228)}</td>
+  <td>${pCell(r.ps.CSE114)}</td>
+  <td>${r.blocked?'<span class="b b-r">Issues</span>':'<span class="b b-g">Clear</span>'}</td>
+ </tr>`).join('');
+}
+
+function filterP(){
+ const q=document.getElementById('ps').value.toLowerCase();
+ const f=document.getElementById('pf').value;
+ let data=[...ALL_STUDENTS];
+ if(f==='blocked') data=data.filter(r=>r.blocked);
+ if(f==='ok') data=data.filter(r=>!r.blocked);
+ if(q) data=data.filter(r=>r.n.toLowerCase().includes(q)||r.id.includes(q));
+ renderPrereq(data);
+}
+
+function renderFgrade(data){
+ const prereqSet=new Set(['MAT211','CSE221','CSE222','CSE228','CSE114']);
+ document.getElementById('ftbody').innerHTML = data.map((r,i)=>{
+  const isPrereq = r.prereq;
+  const tags = r.courses.map(c=>
+   prereqSet.has(c)?`<span class="b b-r">${c}</span>`:`<span class="b b-gy">${c}</span>`
+  ).join(' ');
+  return `<tr>
+   <td style="color:var(--color-text-tertiary)">${i+1}</td>
+   <td class="mono">${r.id}</td>
+   <td>${r.n}</td>
+   <td style="max-width:220px">${tags}</td>
+   <td>${isPrereq?'<span class="b b-r">Retake prereq</span>':'<span class="b b-a">Retake needed</span>'}</td>
+  </tr>`;
+ }).join('');
+}
+
+function filterF(){
+ const q=document.getElementById('fs').value.toLowerCase();
+ const f=document.getElementById('ff').value;
+ let data=[...FGRADE_DATA];
+ if(f==='prereq') data=data.filter(r=>r.prereq);
+ if(q) data=data.filter(r=>r.n.toLowerCase().includes(q)||r.id.includes(q));
+ renderFgrade(data);
+}
+
+function filterOK(q){
+ const data=ELIGIBLE_IDS.filter(id=>id.includes(q.toLowerCase()));
+ document.getElementById('oktbody').innerHTML=data.map((id,i)=>`<tr>
+  <td style="color:var(--color-text-tertiary)">${i+1}</td>
+  <td class="mono">${id}</td>
+  <td>${id.replace('242-15-','(')+')'}</td>
+  <td><span class="b b-g">All 5 prereqs passed</span></td>
+ </tr>`).join('');
+}
+
+function sw(id,el){
+ document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+ document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
+ el.classList.add('on');
+ document.getElementById('p-'+id).classList.add('on');
+}
+
+new Chart(document.getElementById('chart1'),{
+ type:'doughnut',
+ data:{labels:['Eligible','Blocked'],datasets:[{data:[178,73],backgroundColor:['#639922','#E24B4A'],borderWidth:0}]},
+ options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}}
+});
+new Chart(document.getElementById('chart2'),{
+ type:'bar',
+ data:{labels:['F in prereq','Not taken','Incomplete','F (other)'],datasets:[{label:'Students',data:[15,44,12,56],backgroundColor:['#E24B4A','#EF9F27','#888780','#F09595'],borderWidth:0,borderRadius:3}]},
+ options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false}},y:{beginAtZero:true,ticks:{stepSize:10}}}}
+});
+
+renderPrereq(ALL_STUDENTS);
+renderFgrade(FGRADE_DATA);
+filterOK('');
+</script>
